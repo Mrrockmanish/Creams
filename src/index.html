@@ -2,17 +2,267 @@
 <html lang="ru">
 //= templates/head.html
 <body class="relative">
-  //= templates/modal-form.html
-  //= templates/header.html
-  <section class="">
-      <div class="container">
-          <div class="flex">
-             zxcv
-          </div>
-      </div>
-  </section>
-  //= templates/footer.html
-  //= templates/scripts.html
+//= templates/modal-form.html
+//= templates/header.html
+<section class="">
+    <div class="container">
+        <div class="flex justify-center logo-area py-5 border-b border-gray">
+            <div class="logo inline-flex ff-book text-green leading-none">
+                ЛОГО
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bars flex lg:hidden flex-col w-10 h-6 justify-between z-50 fixed hover:opacity-75 transition-300" style="right: 1rem;">
+    <span class="bg-dark w-full flex" style="height: 2px;"></span>
+    <span class="mt-1 bg-dark w-full flex" style="height: 2px;"></span>
+    <span class="mt-1 bg-dark w-full flex" style="height: 2px;"></span>
+</div>
+<section class="menu pt-20 lg:pt-5 pb-6 fixed lg:static top-0 w-full h-full overflow-y-scroll lg:overflow-y-visible bg-white z-10">
+    <div class="container">
+        <nav class="flex justify-center text-white">
+            <ul class="menu__ul flex flex-col lg:flex-row items-end lg:items-center leading-relaxed lg:leading-none flex-grow text-gray justify-between">
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Преимущества</a>
+                </li>
+                <li>
+                    <a href="#">Бренды</a>
+                </li>
+                <li>
+                    <a href="#">Условия</a>
+                </li>
+                <li>
+                    <a href="#">Почему мы?</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<section class="promo container">
+    <div class="flex flex-wrap lg:flex-no-wrap">
+        <div class="promo__offer leading-tight text-white bg-green flex flex-col justify-center lg:mr-4 order-last md:order-first mt-4 md:mt-0">
+            <h1 class="promo__title ff-book uppercase">
+                Профессиолнальная косметика для салонов и&nbsp;косметологов
+            </h1>
+            <div class="promo__subtitle mt-4">
+                Получите бесплатные пробники и протестируйте профессиолнальную косметику
+            </div>
+            <div class="flex items-center mt-8">
+                <span class="figure hidden lg:inline-flex w-4 h-4 border-r border-t border-beige mr-4"></span>
+                <div class="beige-button button inline-flex flex-grow sm:flex-grow-0 bg-beige px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
+                    Заказать пробники
+                </div>
+            </div>
+        </div>
+        <div class="promo__right flex flex-grow">
+            <div class="promo-slider w-full">
+                <div class="promo-slider__slide w-full outline-none" style="background-image:url(img/slider/1.jpg);"></div>
+                <div class="promo-slider__slide w-full outline-none" style="background-image:url(img/slider/1.jpg);"></div>
+                <div class="promo-slider__slide w-full outline-none" style="background-image:url(img/slider/1.jpg);"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-20 lg:mt-32 pb-8 overflow-hidden">
+    <div class="container">
+        <div class="flex flex-wrap -mx-4">
+            <div class="flex w-full lg:w-7/12 px-4">
+                <div style="max-width: 41rem">
+                    <div class="title-wrap pt-16 uppercase inline-block relative">
+                        <div class="title-decorate title-decorate_left_60 flex items-center">
+                            <div class="inline-flex">
+                                01
+                            </div>
+                            <div class="title-decorate__line inline-flex mx-4"></div>
+                            <span class="figure inline-flex w-4 h-4 border border-gray mr-4"></span>
+                        </div>
+                        <h2 class="section-title ff-book leading-tight">Наша компания</h2>
+                    </div>
+                    <div class="mt-10">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blandi
+                        tiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas mole
+                        stias excepturi sint occaecati cupiditate non provident, similique suntin cul
+                        pa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                    </div>
+                    <div class="mt-8">
+                        <a href="" class="video-link button green-button inline-flex flex-grow sm:flex-grow-0 bg-green text-white px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
+                            <span class="hidden sm:inline-flex flex-shrink-0 mr-4">
+                                <svg class="w-6 h-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="white"
+                                          d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <div class="inline-flex">Смотреть видео о нас</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full items-start lg:w-5/12 px-4 mt-16">
+                <div class="about-img div mr-5 relative">
+                    <img src="img/company/1.jpg" class="relative z-10" alt="наша компания">
+                    <div class="about-img__square absolute"></div>
+                    <img src="img/elements/sheet1.png" class="about-img__sheet-left absolute">
+                    <img src="img/elements/sheet2.png" class="about-img__sheet-right absolute">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why mt-16 lg:mt-24 py-20 lg:py-32 bg-salad">
+    <div class="container">
+        <div class="md:text-center">
+            <div class="title-wrap pt-16 uppercase inline-block relative">
+                <div class="title-decorate title-decorate_left_-45 flex items-center">
+                    <div class="inline-flex">
+                        02
+                    </div>
+                    <div class="title-decorate__line inline-flex mx-4"></div>
+                    <span class="figure inline-flex w-4 h-4 border border-gray mr-4"></span>
+                </div>
+                <h2 class="section-title ff-book leading-tight">Почему мы?</h2>
+            </div>
+        </div>
+        <div class="flex flex-wrap flex-grow -mx-2 xl:-mx-5 mt-16">
+            <div class="why-item w-full md:w-1/2 lg:w-1/3 px-2 xl:px-5 mt-6">
+                <div class="why-item__white-area bg-white">
+                    <div class="why-item__inner flex items-start border border-light-gray px-6 py-12">
+                        <div class="flex flex-shrink-0 w-6 sm:w-10 xxl:w-16 h-6 sm:h-10 xxl:h-16 mr-4 mt-3">
+                            <img src="img/icons/1.png">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="why-item__title">
+                                Пункт 1
+                            </div>
+                            <div class="why-item__desc text-lg mt-2">
+                                Leniti atque corrupti quos dolores et quas molestias excepturi sint atque corrupti
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-item w-full md:w-1/2 lg:w-1/3 px-2 xl:px-5 mt-6">
+                <div class="why-item__white-area bg-white">
+                    <div class="why-item__inner flex items-start border border-light-gray px-6 py-12">
+                        <div class="flex flex-shrink-0 w-6 sm:w-10 xxl:w-16 h-6 sm:h-10 xxl:h-16 mr-4 mt-3">
+                            <img src="img/icons/2.png">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="why-item__title">
+                                Пункт 2
+                            </div>
+                            <div class="why-item__desc text-lg mt-2">
+                                Leniti atque corrupti quos dolores et quas molestias excepturi sint atque corrupti
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-item w-full md:w-1/2 lg:w-1/3 px-2 xl:px-5 mt-6">
+                <div class="why-item__white-area bg-white">
+                    <div class="why-item__inner flex items-start border border-light-gray px-6 py-12">
+                        <div class="flex flex-shrink-0 w-6 sm:w-10 xxl:w-16 h-6 sm:h-10 xxl:h-16 mr-4 mt-3">
+                            <img src="img/icons/3.png">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="why-item__title">
+                                Пункт 3
+                            </div>
+                            <div class="why-item__desc text-lg mt-2">
+                                Leniti atque corrupti quos dolores et quas molestias excepturi sint atque corrupti
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-green pt-20 lg:pt-32 pb-12 lg:pb-16">
+    <div class="container">
+        <div class="flex">
+
+        </div>
+    </div>
+</section>
+<section class="brands mt-20 lg:mt-32">
+    <div class="container">
+        <div class="title-wrap pt-16 inline-block relative">
+            <div class="title-decorate title-decorate_left_50 flex items-center">
+                <div class="inline-flex">
+                    03
+                </div>
+                <div class="title-decorate__line inline-flex mx-4"></div>
+                <span class="figure inline-flex w-4 h-4 border border-gray mr-4"></span>
+            </div>
+            <h2 class="section-title ff-book leading-tight uppercase">Бренды косметики</h2>
+        </div>
+        <div class="">Выберете брерд, который подходит больше всего</div>
+        <div class="flex flex-wrap -mx-2 xxl:-mx-5 mt-12">
+            <div class="brands-item flex w-full sm:w-1/2 lg:w-1/3 px-2 xxl:px-5 mt-6">
+                <div class="brands-item__inner flex flex-col items-center hover:bg-salad transition-300 border border-green">
+                    <div class="brands-item__img w-full" style="background-image:url(img/brands/ronas.png);"></div>
+                    <div class="brands-item__desc text-center my-4">
+                        <span class="text-green">О бренде:</span> Благодаря выверенному сочетанию
+                        действующих ингредиентов инатуральных компонентов,
+                        средства бренда нормализуют функции кожи и
+                        улучшают ее состояние, сохраняя вашу красоту.
+                    </div>
+                    <div class="justify-center mt-auto">
+                        <div class="green-button brands-button bg-green inline-flex bg-green text-white uppercase leading-none px-4 h-8 items-center justify-center cursor-pointer mt-4">
+                            Смотреть продукцию
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands-item flex w-full sm:w-1/2 lg:w-1/3 px-2 xxl:px-5 mt-6">
+                <div class="brands-item__inner flex flex-col items-center hover:bg-salad transition-300 border border-green">
+                    <div class="brands-item__img w-full" style="background-image:url(img/brands/mer.png);"></div>
+                    <div class="brands-item__desc text-center my-4">
+                        <span class="text-green">О бренде:</span> MERIKIT, разворачивает время вспять.
+                        Фокусируется на исследованиях в области здоровья
+                        кожи и разрабатывает средства, действие которых
+                        направлено на решение основных проблем.
+                    </div>
+                    <div class="justify-center mt-auto">
+                        <div class="green-button brands-button bg-green inline-flex bg-green text-white uppercase leading-none px-4 h-8 items-center justify-center cursor-pointer mt-4">
+                            Смотреть продукцию
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands-item flex w-full sm:w-1/2 lg:w-1/3 px-2 xxl:px-5 mt-6">
+                <div class="brands-item__inner flex flex-col items-center hover:bg-salad transition-300 border border-green">
+                    <div class="brands-item__img w-full" style="background-image:url(img/brands/orjade.png);"></div>
+                    <div class="brands-item__desc text-center my-4">
+                        <span class="text-green">О бренде:</span> Компания вкладывает все усилия,
+                        чтобы соответствовать названию, разрабатывая
+                        средства,которые становятся «драгоценностями»
+                        косметического рынка. OR’JADE – это находка.
+                    </div>
+                    <div class="justify-center mt-auto">
+                        <div class="green-button brands-button bg-green inline-flex bg-green text-white uppercase leading-none px-4 h-8 items-center justify-center cursor-pointer mt-4">
+                            Смотреть продукцию
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+//= templates/footer.html
+//= templates/scripts.html
 </body>
 
 </html>

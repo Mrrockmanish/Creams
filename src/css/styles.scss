@@ -175,6 +175,25 @@ a {
 
 .figure {
   transform: rotate(45deg);
+
+  &_s {
+    &_40 {
+      width: s(40);
+      height: s(40);
+      margin-left: - s(20);
+      margin-top: - s(20);
+      left: 50%;
+      top: 50%;
+    }
+    &_25 {
+      width: s(26);
+      height: s(26);
+      left: 75%;
+      top: 50%;
+      margin-left: - s(13);
+      margin-top: - s(13);
+    }
+  }
 }
 
 .promo-slider {
@@ -233,6 +252,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 
   &__line {
     height: s(1);
@@ -249,6 +269,13 @@ a {
       left: 0;
       @media (min-width: 768px) {
         left: -45%;
+      }
+    }
+
+    &_-12 {
+      left: 0;
+      @media (min-width: 768px) {
+        left: -12%;
       }
     }
 
@@ -340,6 +367,129 @@ a {
   }
 }
 
-.brands-button {
+.view-more-button {
   font-size: s(16);
+}
+
+.advantages {
+  &__inner {
+    background-image: linear-gradient(to right, #edffed 96%, transparent 96%, transparent);
+  }
+}
+
+.advantage {
+  counter-increment: step-counter;
+  max-width: s(300);
+
+  @media (min-width: 576px) {
+    max-width: 100%;
+  }
+
+  &__sheet-left {
+    width: 33rem;
+    position: absolute;
+    left: 0;
+    top: - 6rem;
+    transform: translateX(- 10%);
+  }
+
+  &__sheet-right {
+    position: absolute;
+    bottom: - 12rem;
+    right: 0;
+
+    @media (min-width: 576px) {
+      bottom: - 14rem;
+    }
+
+  }
+
+  &__title {
+    font-size: s(32);
+  }
+
+  &__desc {
+    max-width: s(260);
+    font-size: s(20);
+  }
+
+  &::before {
+    content: '0' counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 20%;
+    font-size: s(140);
+    color: #e0f1e9;
+    line-height: 0;
+    z-index: 1;
+
+    @media (min-width: 576px) {
+      font-size: s(176);
+    }
+  }
+}
+
+.cooperation {
+  &__img {
+    z-index: 1;
+  }
+  &__square {
+    width: 80%;
+    height: 60%;
+    right: - 3.5%;
+    bottom: - 5.5%;
+    background: #ffeac8;
+    z-index: 0;
+  }
+}
+
+.cooperation-kinds {
+  max-width: 90%;
+  @media (min-width: 1200px) {
+    max-width: 65rem;
+  }
+
+  &__caption {
+    top: 0;
+    left: 50%;
+    height: s(22);
+    line-height: 0.8;
+    transform: translate(-50%, -50%);
+    font-size: s(17);
+
+    @media (min-width: 576px) {
+      font-size: s(22);
+    }
+  }
+
+  &__left-block {
+    width: s(100);
+    height: s(90);
+    left: - s(50);
+    bottom: - s(45);
+    background: white;
+  }
+
+  &__right-block {
+    width: s(50);
+    height: s(50);
+    right: - s(25);
+    bottom: - s(25);
+  }
+
+  &__inner {
+    max-width: s(650);
+  }
+}
+
+.cooperation-kind {
+  max-width: s(270);
+
+  &__title {
+    font-size: s(23);
+  }
+
+  &__desc {
+    font-size: s(20);
+  }
 }

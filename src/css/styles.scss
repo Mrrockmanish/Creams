@@ -149,17 +149,26 @@ a {
     }
   }
 
-  &__title {
-    max-width: s(500);
-    font-size: 1.5rem;
+  &-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
 
     @media (min-width: 992px) {
       font-size: s(35);
     }
+
+    &_biger {
+      @media (min-width: 992px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: s(44);
+      }
+    }
   }
 
-  &__subtitle {
-    max-width: s(545);
+  &-subtitle {
     font-size: s(20);
 
     @media (min-width: 992px) {
@@ -170,7 +179,11 @@ a {
 
 .button {
   height: s(58);
-  font-size: s(21);
+  font-size: s(19);
+
+  @media (min-width: 576px) {
+    font-size: s(21);
+  }
 }
 
 .figure {
@@ -272,10 +285,25 @@ a {
       }
     }
 
+    &_-30 {
+      left: 0;
+
+      @media (min-width: 768px) {
+        left: -30%;
+      }
+    }
+
     &_-12 {
       left: 0;
       @media (min-width: 768px) {
         left: -12%;
+      }
+    }
+
+    &_40 {
+      left: 0;
+      @media (min-width: 992px) {
+        left: 40%;
       }
     }
 
@@ -492,4 +520,76 @@ a {
   &__desc {
     font-size: s(20);
   }
+}
+
+.get-free {
+  background: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+
+  @media (min-width: 576px) {
+    background-position: 60%;
+  }
+
+  &__text-block {
+    max-width: 34rem;
+    padding-top: s(55);
+    padding-bottom: s(80);
+    background: #0a3900;
+
+    @media (min-width: 992px) {
+        max-width: 43rem;
+    }
+  }
+
+  &__sheet-left {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  &__sheet-right {
+    top: 1rem;
+    right: 3rem
+  }
+}
+
+.figure {
+  bottom: 3rem;
+  right: 8rem;
+}
+
+.attention {
+  &__right {
+    max-width: s(430);
+  }
+}
+
+.attention {
+  &__title {
+    font-size: s(24);
+  }
+}
+
+.footer {
+  background-color: #171615;
+  color: white;
+  padding-top: s(40);
+  padding-bottom: s(50);
+}
+
+.get-discount {
+  &__sheet-left {
+    left: -2rem;
+    bottom: 0;
+    width: 40%;
+  }
+  &__sheet-right {
+    right: -4rem;
+    bottom: 4rem;
+    width: 30%;
+  }
+}
+
+#form-modal {
+  max-width: s(400);
 }

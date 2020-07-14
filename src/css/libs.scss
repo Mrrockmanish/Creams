@@ -1,4 +1,4 @@
-// @import '../../node_modules/magnific-popup/dist/magnific-popup';
+@import '../../node_modules/magnific-popup/dist/magnific-popup';
 @import '../../bower_components/arcticModal/arcticmodal/jquery.arcticmodal';
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
@@ -22,4 +22,37 @@ $root-font-size: 16;
 .slick-dots li.slick-active button:before {
   color: #ffeac8;
   opacity: 1;
+}
+
+.comments-arrow {
+  width: s(32);
+  height: s(32);
+  border: s(16) solid transparent!important;
+
+  &::before {
+    content: ''!important;
+  }
+
+  &__left {
+    border-right-color: #0a3900!important;
+
+  }
+
+  &__right {
+    border-left-color: #0a3900!important;
+  }
+}
+
+.comments-slider {
+  .slick-prev {
+    left: - s(35);
+  }
+
+  .slick-next {
+    right: - s(35);
+  }
+}
+
+.arcticmodal-container_i2 {
+  padding: s(10);
 }

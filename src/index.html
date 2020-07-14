@@ -4,61 +4,18 @@
 <body class="relative">
 //= templates/modal-form.html
 //= templates/header.html
-<section class="">
-    <div class="container">
-        <div class="flex justify-center logo-area py-5 border-b border-gray">
-            <div class="logo inline-flex ff-book text-green leading-none">
-                ЛОГО
-            </div>
-        </div>
-    </div>
-</section>
-<div class="bars flex lg:hidden flex-col w-10 h-6 justify-between z-50 fixed hover:opacity-75 transition-300" style="right: 1rem;">
-    <span class="bg-dark w-full flex" style="height: 2px;"></span>
-    <span class="mt-1 bg-dark w-full flex" style="height: 2px;"></span>
-    <span class="mt-1 bg-dark w-full flex" style="height: 2px;"></span>
-</div>
-<section class="menu pt-20 lg:pt-5 pb-6 fixed lg:static top-0 w-full h-full overflow-y-scroll lg:overflow-y-visible bg-white z-10">
-    <div class="container">
-        <nav class="flex justify-center text-white">
-            <ul class="menu__ul flex flex-col lg:flex-row items-end lg:items-center leading-relaxed lg:leading-none flex-grow text-gray justify-between">
-                <li>
-                    <a href="#">О нас</a>
-                </li>
-                <li>
-                    <a href="#">Преимущества</a>
-                </li>
-                <li>
-                    <a href="#">Бренды</a>
-                </li>
-                <li>
-                    <a href="#">Условия</a>
-                </li>
-                <li>
-                    <a href="#">Почему мы?</a>
-                </li>
-                <li>
-                    <a href="#">Отзывы</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</section>
 <section class="promo container">
     <div class="flex flex-wrap lg:flex-no-wrap">
         <div class="promo__offer leading-tight text-white bg-green flex flex-col justify-center lg:mr-4 order-last md:order-first mt-4 md:mt-0">
-            <h1 class="promo__title ff-book uppercase">
+            <h1 class="promo-title ff-book uppercase" style="max-width: 31.25rem;">
                 Профессиолнальная косметика для салонов и&nbsp;косметологов
             </h1>
-            <div class="promo__subtitle mt-4">
+            <div class="promo-subtitle mt-4" style="max-width: 34.1rem;">
                 Получите бесплатные пробники и протестируйте профессиолнальную косметику
             </div>
             <div class="flex items-center mt-8">
                 <span class="figure hidden lg:inline-flex w-4 h-4 border-r border-t border-beige mr-4"></span>
-                <div class="beige-button button inline-flex flex-grow sm:flex-grow-0 bg-beige px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
+                <div data-call="Заказать пробники" class="beige-button button inline-flex flex-grow sm:flex-grow-0 bg-beige px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
                     Заказать пробники
                 </div>
             </div>
@@ -72,7 +29,7 @@
         </div>
     </div>
 </section>
-<section class="mt-20 lg:mt-32 pb-8 overflow-hidden">
+<section class="mt-20 lg:mt-32 pb-8 overflow-hidden" id="about">
     <div class="container">
         <div class="flex flex-wrap -mx-4">
             <div class="flex w-full lg:w-7/12 px-4">
@@ -96,7 +53,7 @@
                         pa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                     </div>
                     <div class="mt-8">
-                        <a href="" class="video-link button green-button inline-flex flex-grow sm:flex-grow-0 bg-green text-white px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
+                        <a href="https://www.youtube.com/watch?v=kDJ2dV8rWFw" class="video-link button green-button inline-flex flex-grow sm:flex-grow-0 bg-green text-white px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
                             <span class="hidden sm:inline-flex flex-shrink-0 mr-4">
                                 <svg class="w-6 h-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path fill="white"
@@ -120,7 +77,7 @@
         </div>
     </div>
 </section>
-<section class="why mt-16 lg:mt-24 py-20 lg:py-32 bg-salad">
+<section class="why mt-16 lg:mt-24 py-20 lg:py-32 bg-salad" id="why">
     <div class="container">
         <div class="md:text-center">
             <div class="title-wrap pt-16 uppercase inline-block relative">
@@ -189,14 +146,37 @@
         </div>
     </div>
 </section>
-<section class="bg-green pt-20 lg:pt-32 pb-12 lg:pb-16">
-    <div class="container">
-        <div class="flex">
-
+<section class="get-discount bg-green pt-20 lg:pt-32 overflow-hidden">
+    <div class="container relative">
+        <div class="flex flex-wra -mx-8">
+            <div class="hidden lg:flex lg:w-1/2 xl:w-5/12 items-start self-end px-8">
+                <img src="img/elements/cream.png" alt="MERIKIT" class="relative z-10">
+            </div>
+            <div class="flex w-full lg:w-1/2 xl:w-7/12 px-8 pb-16">
+                <div>
+                    <div class="promo-title promo-title_biger ff-book uppercase text-white" style="max-width: 33rem;">
+                        Получите скидку 10% на первый заказ
+                    </div>
+                    <div class="text-2xl text-white leading-tight mt-4">
+                        Скидка на любую косметику одного из наших брендов
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <span class="figure hidden lg:inline-flex w-4 h-4 border-r border-t border-beige mr-4"></span>
+                        <div data-call="Получить скидку сейчас" class="beige-button button inline-flex sm:flex-grow-0 bg-beige px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
+                            Получить скидку сейчас
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <img src="img/elements/form-sheet-left.png" class="get-discount__sheet-left absolute">
+        <img src="img/elements/form-sheet-right.png" class="get-discount__sheet-right absolute">
+        <span class="figure hidden lg:inline-flex w-4 h-4 border border-gray absolute z-10" style="left: 7rem; top: 2rem"></span>
+        <span class="figure hidden sm:inline-flex w-10 h-10 border border-gray absolute z-10" style="left: 29rem; bottom: 2rem"></span>
+        <span class="figure hidden sm:inline-flex w-4 h-4 border border-gray absolute z-10" style="top: -2rem"></span>
     </div>
 </section>
-<section class="brands mt-20 lg:mt-32 pb-12 lg:pb-20">
+<section class="brands mt-20 lg:mt-32 pb-12 lg:pb-20" id="brands">
     <div class="container">
         <div class="title-wrap pt-16 inline-block relative">
             <div class="title-decorate title-decorate_left_50 flex items-center">
@@ -261,7 +241,7 @@
         </div>
     </div>
 </section>
-<section class="advantages pb-16 overflow-hidden">
+<section class="advantages pb-16 overflow-hidden" id="advantages">
     <div class="advantages__inner pt-20 lg:pt-32 pb-32 sm:pb-40">
         <div class="container relative">
             <div class="md:text-center">
@@ -333,7 +313,7 @@
         </div>
     </div>
 </section>
-<section class="cooperation mt-16 sm:mt-20 pb-32">
+<section class="cooperation mt-16 sm:mt-20 pb-20 md:pb-32" id="cooperation">
     <div class="container">
         <div class="flex justify-center -mx-4 lg:-mx-8">
             <div class="flex w-full items-center w-full lg:w-7/12 xl:w-7/12 xxl:w-5/12 px-4 lg:px-8">
@@ -341,7 +321,7 @@
                     <div class="title-wrap pt-16 inline-block relative">
                         <div class="title-decorate title-decorate_left_50 flex items-center">
                             <div class="inline-flex">
-                                04
+                                05
                             </div>
                             <div class="title-decorate__line inline-flex mx-4"></div>
                             <span class="figure inline-flex w-4 h-4 border border-gray mr-4"></span>
@@ -404,6 +384,107 @@
                 <div class="relative w-full h-full">
                     <span class="figure figure_s_25 absolute inline-flex w-4 h-4 border border-gray" style="left: 50%; top: 50%"></span>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="get-free py-20 sm:py-32" style="background-image:url(img/company/form-bg.jpg);">
+    <div class="container">
+        <div class="get-free__text-block relative text-center ml-auto px-4 sm:px-6">
+            <h2 class="promo-title text-white uppercase mx-auto ff-book" style="max-width: 24rem">
+                Получите бесплатное обучение
+            </h2>
+            <div class="promo-subtitle mx-auto text-white mt-4 leading-tight" style="max-width: 40rem">
+                Станьте нашим партнером и получите бесплатное
+                обучение для продажи и использования косметики
+            </div>
+            <div data-call="Стать партнёром" class="beige-button button call inline-flex flex-grow sm:flex-grow-0 bg-beige px-5 sm:px-16 justify-center items-center text-dark uppercase cursor-pointer mt-10">
+                Стать партнёром
+            </div>
+            <img src="img/elements/form-sheet-left.png" class="get-free__sheet-left absolute">
+            <img src="img/elements/form-sheet-right.png" class="get-free__sheet-right absolute">
+            <span class="figure w-6 h-6 border  border-gray absolute mr-4"></span>
+        </div>
+    </div>
+</section>
+<section class="attention overflow-hidden py-16 sm:py-20 md:py-32">
+    <div class="container">
+        <div class="md:text-center">
+            <div class="title-wrap pt-16 uppercase inline-block relative">
+                <div class="title-decorate title-decorate_left_-30 flex items-center">
+                    <div class="inline-flex">
+                        06
+                    </div>
+                    <div class="title-decorate__line inline-flex mx-4"></div>
+                    <span class="figure inline-flex w-4 h-4 border border-gray mr-4"></span>
+                </div>
+                <h2 class="section-title ff-book leading-tight">Будьте осторожны</h2>
+            </div>
+        </div>
+        <div class="flex items-center justify-center flex-wrap md:flex-no-wrap mt-16 md:mt-24 -mx-6">
+            <div class="items-start px-6">
+                <img src="img/company/atention.png" alt="будьте осторожны">
+            </div>
+            <div class="attention__right text-center px-6 mt-8">
+                <div class="attention__title leading-tight ff-book">
+                    Не доверяйте лица ваших клиентов
+                    непонятным брендам и сохраните
+                    свою репутацию!
+                </div>
+                <div class="attention__desc mt-4">
+                    At vero eos et accusamus et iu odio dignimos ducimus qui blandi iis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                </div>
+                <div class="mt-8">
+                    <div data-call="Заказать косметику" class="button green-button inline-flex flex-grow sm:flex-grow-0 bg-green text-white px-4 sm:px-8 justify-center items-center text-dark uppercase cursor-pointer">
+                        <div class="inline-flex">Заказать косметику</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="comments bg-salad py-16 sm:py-20 md:py-32 overflow-hidden">
+    <div class="container">
+        <div class="title-wrap pt-16 inline-block relative">
+            <div class="title-decorate title-decorate_left_40 flex items-center">
+                <div class="inline-flex">
+                    07
+                </div>
+                <div class="title-decorate__line inline-flex mx-4"></div>
+                <span class="figure inline-flex w-4 h-4 border border-gray mr-4"></span>
+            </div>
+            <h2 class="section-title ff-book leading-tight uppercase">Результат косметики</h2>
+            <div class="section-subtitle">
+                Наши бренды уже используются в более 20-ти странах, попробуйте и вы!
+            </div>
+        </div>
+        <div class="comments-slider mt-12 sm:mt-20 mx-auto" style="max-width: 90%" id="comments">
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/1.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/2.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/3.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/4.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/5.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/6.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/7.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/8.jpg" alt="Отзыв">
+            </div>
+            <div class="comments-slider__slide px-4 xxl:px-8">
+                <img src="img/comments/9.jpg" alt="Отзыв">
             </div>
         </div>
     </div>

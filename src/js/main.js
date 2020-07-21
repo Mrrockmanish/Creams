@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 //маска телефона
   $('input[name="tel"]').mask("+7(999) 999-9999");
-  
+
   $('.bars').on('click', function () {
     $(this).next('.menu').fadeToggle();
     $('body').toggleClass('overflow-hidden');
@@ -15,6 +15,7 @@ $(document).ready(function () {
     arrows: false,
     fade: true
   });
+
 
   $('.comments-slider').slick({
     slidesToScroll: 3,
@@ -54,9 +55,52 @@ $(document).ready(function () {
 
 
 
+  $('[data-modal]').on('click', function () {
+    const modalId = $(this).data('modal');
+    $(modalId).arcticmodal();
+  });
 
+  const productionSlider = (el) => {
+    $(el).slick({
+      slidesToScroll: 3,
+      slidesToShow: 3,
+      dots: true,
+      arrows: true,
+      lazyLoad: 'ondemand',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToScroll: 2,
+            slidesToShow: 2,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            arrows: false
+          }
+        }
+      ]
+    })
+  };
 
-
+  $('[data-slider]').on('click', function () {
+    const el = $(this);
+    const modalId = el.data('slider');
+    const sliderId = modalId + "-slider";
+    $(modalId).arcticmodal();
+    productionSlider(sliderId);
+  })
 
 
 

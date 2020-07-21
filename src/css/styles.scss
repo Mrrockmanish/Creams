@@ -358,6 +358,7 @@ a {
 
   &__title {
     font-size: s(24);
+    line-height: 1.2;
   }
 
   &__desc {
@@ -408,6 +409,7 @@ a {
 .advantage {
   counter-increment: step-counter;
   max-width: s(300);
+  height: 9.5rem;
 
   @media (min-width: 576px) {
     max-width: 100%;
@@ -433,7 +435,12 @@ a {
   }
 
   &__title {
-    font-size: s(32);
+    font-size: s(25);
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: s(32);
+    }
   }
 
   &__desc {
@@ -592,4 +599,32 @@ a {
 
 #form-modal {
   max-width: s(400);
+}
+
+.conception {
+  &__item {
+    font-size: s(15);
+
+    @media (min-width: 576px) {
+      font-size: s(16);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: s(19);
+    }
+  }
+}
+
+.about-title {
+  font-size: s(30);
+}
+
+.production-item {
+  &__img {
+    width: s(203);
+    min-height: s(170);
+  }
+  &__desc {
+    max-width: s(177);
+  }
 }

@@ -24,6 +24,33 @@ $root-font-size: 16;
   opacity: 1;
 }
 
+.production-slider {
+  .slick-dots {
+    bottom: - s(80);
+  }
+
+  .slick-dots li button:before {
+    font-size: s(15);
+    color: #8ebc92;
+    opacity: 1;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #0a3900;
+    opacity: 1;
+  }
+
+  .slick-arrow {
+    width: s(35);
+    height: s(35);
+  }
+
+  .slick-arrow::before {
+    color: #8ebc92;
+    font-size: s(35);
+  }
+}
+
 .comments-arrow {
   width: s(32);
   height: s(32);
@@ -55,4 +82,32 @@ $root-font-size: 16;
 
 .arcticmodal-container_i2 {
   padding: s(10);
+}
+
+.white-modal {
+  &_mw {
+    &_750 {
+      @media (min-width: 1200px) {
+        width: 750px;
+      }
+    }
+    &_1140 {
+      width: 290px;
+      @media (min-width: 375px) {
+        width: 343px;
+      }
+      @media (min-width: 576px) {
+        width: 544px;
+      }
+      @media (min-width: 768px) {
+        width: 736px;
+      }
+      @media (min-width: 992px) {
+        width: 945px;
+      }
+      @media (min-width: 1200px) {
+        width: 1140px;
+      }
+    }
+  }
 }

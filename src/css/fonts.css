@@ -7,6 +7,7 @@
     url('../fonts/FuturaLightC.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -18,5 +19,6 @@
     url('../fonts/FuturaBookC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 

@@ -409,7 +409,6 @@ a {
 .advantage {
   counter-increment: step-counter;
   max-width: s(300);
-  height: 9.5rem;
 
   @media (min-width: 576px) {
     max-width: 100%;
@@ -444,8 +443,8 @@ a {
   }
 
   &__desc {
-    max-width: s(260);
-    font-size: s(20);
+    max-width: 22rem;
+    font-size: s(19);
   }
 
   &::before {
@@ -568,6 +567,9 @@ a {
 .attention {
   &__right {
     max-width: s(430);
+    @media (min-width: 992px) {
+      max-width: 30.9rem;
+    }
   }
 }
 
@@ -610,6 +612,7 @@ a {
     }
 
     @media (min-width: 1200px) {
+      max-width: s(180);
       font-size: s(19);
     }
   }
@@ -627,4 +630,8 @@ a {
   &__desc {
     max-width: s(177);
   }
+}
+
+.people-check {
+  display: none;
 }

@@ -103,8 +103,19 @@ $(document).ready(function () {
   })
 
 
-
-
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    // Если у формы определённый класс
+    if (form.hasClass("form-in-modal") && response.success == true) {
+      // Скрываем её!
+      $('#form-modal').arcticmodal('close');
+      $('#thanks').arcticmodal();
+    }
+    // Иначе печатаем в консоль весь ответ
+    else {
+      console.log(response);
+    }
+  });
 
 
 

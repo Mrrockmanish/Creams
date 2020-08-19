@@ -579,13 +579,6 @@ a {
   }
 }
 
-.footer {
-  background-color: #171615;
-  color: white;
-  padding-top: s(40);
-  padding-bottom: s(50);
-}
-
 .get-discount {
   &__sheet-left {
     left: -2rem;
@@ -634,4 +627,33 @@ a {
 
 .people-check {
   display: none;
+}
+
+
+.footer {
+  font-size: s(20);
+  background-color: #171615;
+  padding-top: s(40);
+
+  @media (min-width: 576px) {
+    font-size: s(24);
+  }
+
+  &__title {
+    font-size: s(30);
+
+    @media (min-width: 576px) {
+      font-size: s(44);
+    }
+  }
+}
+
+.salad-button {
+  font-size: s(21);
+  color: #171615;
+  background-color: #edffed;
+  width: s(266);
+  height: s(34);
+  border-radius: s(10);
+  cursor: pointer;
 }

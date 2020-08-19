@@ -62,8 +62,8 @@ $(document).ready(function () {
 
   const productionSlider = (el) => {
     $(el).slick({
-      slidesToScroll: 3,
-      slidesToShow: 3,
+      slidesToScroll: 1,
+      slidesToShow: 1,
       dots: true,
       arrows: true,
       lazyLoad: 'ondemand',
@@ -77,8 +77,8 @@ $(document).ready(function () {
         {
           breakpoint: 992,
           settings: {
-            slidesToScroll: 2,
-            slidesToShow: 2,
+            slidesToScroll: 1,
+            slidesToShow: 1,
             arrows: false
           }
         },

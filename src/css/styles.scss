@@ -616,10 +616,6 @@ a {
 }
 
 .production-item {
-  &__img {
-    width: s(203);
-    min-height: s(170);
-  }
   &__desc {
     max-width: s(177);
   }

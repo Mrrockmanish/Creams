@@ -47,6 +47,13 @@ $(document).ready(function () {
     type: 'iframe'
   });
 
+  $('.show-certificates').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
   $('[data-call]').on('click', function () {
     $('#form-modal').arcticmodal();
     const dataValue = $(this).data('call');

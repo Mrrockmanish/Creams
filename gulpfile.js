@@ -43,10 +43,11 @@ function css() {
     tailwindcss(),
     autoprefixer({ overrideBrowserslist: ['last 4 version'] }),
     cssnano(),
-    purgecss({
-      content: ['build/*.html'],
-      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-    }),
+    // purgecss({
+    //   content: ['build/*.html'],
+    //   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    // }),
+
 
   ];
   return gulp.src('src/css/styles.scss')

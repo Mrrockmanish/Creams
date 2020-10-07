@@ -111,3 +111,12 @@ $root-font-size: 16;
     }
   }
 }
+
+.production-slider {
+  .slick-prev {
+    left: - s(40);
+  }
+  .slick-next {
+    right: - s(40)
+  }
+}

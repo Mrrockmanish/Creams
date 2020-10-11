@@ -8,6 +8,11 @@ $(document).ready(function () {
     $('body').toggleClass('overflow-hidden');
   });
 
+  $('.menu__ul').on('click', 'a', function (){
+    $('body').removeClass('overflow-hidden');
+    $('.menu').fadeOut();
+  });
+
   $('.promo-slider').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
@@ -100,6 +105,10 @@ $(document).ready(function () {
       ]
     })
   };
+
+  // $('#ronas-slider').arcticmodal();
+  // $('#merllit-slider').arcticmodal();
+  // $('#orjade-slider').arcticmodal();
 
   $('[data-slider]').on('click', function () {
     const el = $(this);

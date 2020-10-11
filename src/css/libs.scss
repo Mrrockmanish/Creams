@@ -72,6 +72,11 @@ $root-font-size: 16;
 
 .comments-slider {
 
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
   .video-link {
     transition: .3s;
     &:hover {
@@ -137,3 +142,4 @@ $root-font-size: 16;
     right: - s(40)
   }
 }
+
